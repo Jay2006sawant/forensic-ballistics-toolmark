@@ -1,0 +1,14 @@
+# Render Blueprint — free tier web service
+# https://dashboard.render.com → New → Blueprint → connect this repo
+
+services:
+  - type: web
+    name: forensic-ballistics-toolmark
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.10.12"

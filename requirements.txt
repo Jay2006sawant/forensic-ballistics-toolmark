@@ -1,0 +1,5 @@
+gradio==5.27.0
+opencv-python-headless>=4.8
+pillow>=10.0
+numpy>=1.24
+requests>=2.28

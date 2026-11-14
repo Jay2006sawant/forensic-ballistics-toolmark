@@ -1,0 +1,37 @@
+================================================================================
+WHAT YOU NEED TO DO (about 10 minutes) — permanent free link on Render
+================================================================================
+
+I already prepared: app, reports, Render config (render.yaml), Docker, tests.
+
+OPTION A — BEST: Render.com (free, 24/7, no laptop needed)
+------------------------------------------------------------
+1. GitHub (one time)
+   In terminal:
+     gh auth login
+     cd /home/jay/forensic-toolmark-prototype
+     gh repo create forensic-ballistics-toolmark --public --source=. --remote=origin --push
+
+2. Render (one time)
+   - Open https://dashboard.render.com/register
+   - Sign up (free, GitHub login is easiest)
+   - Dashboard → New → Blueprint
+   - Connect GitHub → pick repo "forensic-ballistics-toolmark"
+   - Apply → wait ~5–10 min for deploy
+   - Your link: https://forensic-ballistics-toolmark.onrender.com (or similar)
+
+Free tier: app sleeps after ~15 min idle; first open may take 30–60 sec.
+
+OPTION B — RIGHT NOW (no signup): ngrok (already running on your PC)
+------------------------------------------------------------
+Share this link while your laptop is ON:
+  https://nettlesome-complainingly-neda.ngrok-free.dev
+(See PUBLIC_LINK.txt)
+
+OPTION C — Aryan's Hugging Face (free Space may work on HIS account, not jaysaw24)
+------------------------------------------------------------
+Aryan: new-space → Gradio → then tell me "space created" and we git push.
+
+================================================================================
+FROM YOU: only Option A needs you — gh auth login + Render signup + connect repo.
+================================================================================
